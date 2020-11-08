@@ -1,0 +1,51 @@
+$minWidth: 300px;
+$minHeight: 100vh;
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+.App {
+  height: auto;
+  background-color: #eeeeee;
+}
+
+.title {
+  background-color: #202020;
+  color: white;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  text-align: center;
+}
+.maincontainer {
+  width: 90%;
+  min-height: 100vh;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+}
+#editor {
+  min-height: 100vh;
+  height: auto;
+  width: 50%;
+  min-width: $minWidth;
+  min-height: $minHeight;
+  flex-grow: 1;
+  flex-shrink: 1;
+  font-size: 1.1rem;
+  background: white;
+  padding: 1rem;
+}
+#preview {
+  padding: 1rem;
+  width: 50%;
+  border: 1px solid black;
+  background-color: #f1f1f1;
+  min-width: $minWidth;
+  height: 100%;
+  min-height: $minHeight;
+  flex-grow: 1;
+  flex-shrink: 1;
+  overflow: auto;
+}
